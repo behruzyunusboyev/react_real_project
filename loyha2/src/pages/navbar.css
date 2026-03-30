@@ -1,10 +1,11 @@
 .nav{
+    padding: 0px;
+    margin: 0px;
     width: 100%;
-    height: 80px;
-    /* background-color: #ffffff; */
+    height: 160px;
+    background-color: #ffffff;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     position: sticky;
     top: 0;
@@ -12,15 +13,43 @@
     right: 0;
     z-index: 1000;
     /* padding-left: 10px; */
-    padding-right: 10px;
+    /* padding-right: 10px; */
+    /* background-color: red; */
 }
-.nav h1{
+#hrr{
+    width: 100%;
+    height: 3px;
+    background-color: #ccc;
+    border: none;
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+.nav1{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.nav2{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nav .nav1 h1{
     /* font-size: 24px; */
     /* color: #333; */
     cursor: pointer;
     color: rgb(255, 166, 0);
 }
-.nav form{
+.nav .nav1 form{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,7 +59,7 @@
     gap: 0px;
     background-color: white;
 }
-.nav form input{
+.nav .nav1 form input{
     width: 300px;
     height: 40px;
     border-bottom-right-radius: 30px;
@@ -39,10 +68,10 @@
     padding-left: 10px;
     cursor: text;
 }
-.nav form input:focus{
+.nav .nav1 form input:focus{
     outline: none;
 }
-.nav form:focus-within{
+.nav .nav1 form:focus-within{
     border: 3px solid orange;
 }
 #search_img{
@@ -52,6 +81,27 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-radius: 30px;
+}
+#nav2_ul{
+    width: 700px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 20px; */
+    /* background-color: tomato; */
+}
+#nav2_ul li a:hover{
+    color: #305cfa;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#sell{
+    color: rgb(30, 69, 243);
+    cursor: pointer;
 }
 .nav_rasm{
     width: 20px;

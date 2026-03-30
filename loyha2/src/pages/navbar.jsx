@@ -21,7 +21,8 @@ function Navbar(){
 // );
     return(
         <div className="nav">
-            <h1>SHOPZONE</h1>
+            <div className="nav1">
+      <h1>SHOPZONE</h1>
             <form action="">
                 <img src={search} alt="Search" id='search_img' />
                 <input 
@@ -47,6 +48,19 @@ function Navbar(){
                 <li class='nav_item'><img src={signin} alt="" class='nav_rasm signin' /><a href="">login</a></li>
                 <li class='nav_item'><button id='sign_btn'>signup</button></li>
             </ul>
+            </div>
+            <div className="nav2">
+            <hr id='hrr'/>
+              <ul id='nav2_ul'>
+                <li><a href="#AllCategories">All categories</a></li>
+                <li><a href="#Electronics">Electronics</a></li>
+                <li><a href="#Fashion">Fashion</a></li>
+                <li><a href="#Home">Home & living</a></li>
+                <li><a href="#Beauty">Beauty</a></li>
+                <li><a href="#Sports">Sports</a></li>
+                <li><a href="#Sale" id='sell'>Sale</a></li>
+              </ul>
+            </div>
         </div>
     )
 }
