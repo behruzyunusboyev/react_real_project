@@ -54,6 +54,10 @@
 }
 .category_items button:hover{
     transition: background linear 0.3s;
+    background-position: left;
+}
+.category_items button:hover a{
+    background-position: right;
 }
 #electronics:hover{
     transition: all 0.3s ease-in-out;
